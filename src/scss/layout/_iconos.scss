@@ -1,0 +1,22 @@
+@include tablet{
+    .iconos-nosotros{
+        @include grid(3, 4rem)
+    }
+}
+
+
+
+.icono{
+
+       
+    img{
+        margin-left:14rem;
+        height:10rem;
+        width: 10rem;
+
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+}

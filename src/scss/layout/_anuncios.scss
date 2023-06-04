@@ -1,0 +1,90 @@
+
+@include tablet{
+    .contenedor-anuncios{
+        @include grid(3, 2rem);
+        
+
+    }
+}
+
+.anuncio{
+    background-color: $gris;
+    width: 40rem;
+    border: 1px solid $grisOscuro;
+//
+    
+    margin-bottom: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+
+    img{
+        height: 25rem;
+        padding: 1rem;
+        margin-bottom: 0;
+//
+        object-fit: cover;
+    }
+
+    .contenido-anuncio{
+        padding: 2rem;
+        
+
+        p{
+     
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .parraf{
+            height: 48rem;
+            text-align: left;
+        }
+
+        
+
+    }
+
+    
+
+    h3,p{
+        margin: 0;
+        overflow-wrap: break-word;
+    
+    }
+
+    .fecha{
+        margin-top: 2rem;
+        color: $verdeVivo;
+    text-align: center;
+        font-weight: $bold;
+        font-size: 2rem;
+    }
+}
+
+.iconos-caracteristicas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width:50rem;
+    
+
+    li{
+        flex:1;
+        display: flex;
+    }
+
+    img{
+        flex: 0 0 6rem;
+        margin-right: 0 rem;
+        height:6rem;
+    
+    }
+
+    p{
+        font-weight: $black;
+        
+        margin-top: 1.5rem;
+    
+
+    }
+}

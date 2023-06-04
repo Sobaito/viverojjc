@@ -1,0 +1,56 @@
+
+.inicio{
+    background-image: url(/build/img/imagenPrincipal.jpg);
+}
+
+
+.header {
+    background-color: $verde;
+    padding: 1rem  0 3rem 0;
+
+    &.inicio{
+
+        background-position: center center;
+        background-size: cover;
+
+        @include  tablet{
+            min-height: 70rem;
+        }
+
+        .contenido-header{
+            @include  tablet{
+                min-height:70rem;
+            }
+
+        }
+    }
+}
+
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h1{
+        text-align: center;
+        color:$blanco;
+        font-weight:bold;
+        line-height:1.5;
+        max-width:60rem;
+    }
+ 
+
+    img{
+        height:11rem;
+        display: none
+
+    }
+
+    @include  tablet{
+        img{
+            display:inline
+        }
+    }
+}
+

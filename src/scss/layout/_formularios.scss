@@ -1,0 +1,21 @@
+.formulario{
+   
+    label{
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    input :not([type="submit"]){
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: $blanco;
+    }
+
+}
+
+img{
+    height: 50rem;
+    margin-bottom: 5rem;
+}
